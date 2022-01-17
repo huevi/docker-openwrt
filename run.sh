@@ -104,7 +104,7 @@ _set_hairpin() {
 _create_or_start_container() {
 	
 	if ! docker inspect $IMAGE:$TAG >/dev/null 2>&1; then
-		echo "docker pull '$IMAGE:$TAG' 
+		echo "docker pull '$IMAGE:$TAG'"
 		docker pull $IMAGE:$TAG 
 		# echo "no image '$IMAGE:$TAG' found, did you forget to run 'make build'?"
 		# exit 1
